@@ -22,18 +22,30 @@ while true; do
             1)
             echo -e "Guard: \"Stopping Tomcat in a normal way.\"\n"
             sh $TOMCAT_BIN/shutdown.sh
+            sleep 10
+            #start tomcat
+            sh $TOMCAT_BIN/startup.sh
             ;;
             2)
             echo -e "Guard: \"Stopping Tomcat in a forced way\"\n"
             pkill -9 -f tomcat
+            sleep 10
+            #start tomcat
+            sh $TOMCAT_BIN/startup.sh
+            ;;
+            3)
+            echo -e "Guard: \"Stopping Tomcat in another forced way\"\n"
+            kill $(ps aux | grep '[c]atalina' | awk '{print $2}')
+            sleep 10
+            #start tomcat
+            sh $TOMCAT_BIN/startup.sh
             ;;
             *)
             echo -e "Guard: \"Not stopping Tomcat\"\n"
             ;;
         esac
 
-        #start tomcat
-         sh $TOMCAT_BIN/startup.sh
+        
     fi
     sleep 5
 done
