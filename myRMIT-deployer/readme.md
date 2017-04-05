@@ -1,4 +1,4 @@
-#Instructions
+# Instructions
 * scp the file into the server, for example:
     - cd /cygdrive/k/Resources/ITS/UO/BAS/Apps/Our Applications/myRMIT/completeSite
     - scp -r 2.0.19_AWS_INT_TST_completeSite_oua_csp/ e67997@10.91.1.9:~

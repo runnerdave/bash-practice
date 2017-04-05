@@ -1,6 +1,6 @@
-#Bash practice files
+# Bash practice files
 
-##the following files are a practice of bash scripting
+## the following files are a practice of bash scripting
 
 * deploy-myRMIT-TST.sh
 	will contain deployment script for myRMIT
