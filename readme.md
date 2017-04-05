@@ -5,11 +5,13 @@
 * deploy-myRMIT-TST.sh
 	will contain deployment script for myRMIT
 * penguin.sh
-	you need to set variables $menu befor calling it by itself
+	you need to set variables $menu before calling it by itself
 * feed.sh
 	uses penguin, receives to arguments: food animal
 * prac1.sh
 	simple prac that prints out system info, date and username
 * prac2.sh
 	simple prac that uses variables
+* passwordless.sh
+    allows you to upload your id_rsa.pub key to a server and sets the necessary permissions to not need to enter your password again
 
