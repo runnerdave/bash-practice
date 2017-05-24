@@ -15,3 +15,5 @@
 * passwordless.sh
     allows you to upload your id_rsa.pub key to a server and sets the necessary permissions to not need to enter your password again
 
+* curlingCAS.sh and curlingCAS-ARC.sh 
+	allows for a quick healthcheck of the CAS set of servers
